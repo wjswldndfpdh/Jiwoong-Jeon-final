@@ -4,6 +4,8 @@ let t = 0;
 let t_plus = 0.002;
 var mx, my;
 var mode = 0;
+let audioStarted = false; // needed to get it to work in full screen mode. Add in the variable section
+
 
 /*I got the color generation from https://openprocessing.org/sketch/2224315 */
 var grad;
@@ -17,6 +19,7 @@ let colors2 = "8c75ff-ca79d3-db9191-2788f5-9e6ee3-f21252-6ac4ef-c4dd92-184fd3-f9
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  getAudioContext().suspend();
   splash = new Splash();
 
   let num = random(200, 400);
@@ -237,4 +240,12 @@ class rectangles{
       this.env.triggerAttack(this.osc);
     }
   }
+}
+
+function mousePressed() { // needed to get it to work in full screen mode. Add in mousePressed()
+    // Start audio on user gesture
+    if (!audioStarted) {
+        userStartAudio();
+        audioStarted = true;
+    }
 }
