@@ -15,7 +15,7 @@ class Splash {
   this.name = createDiv("Jiwoong Jeon");
   this.name.position(this.splashBorder+20, this.splashBorder+60);
   
-  this.info = createDiv("Sound doesn't exist in space only because there are no air molecules that humans' ears can detact. Other being might be able to hear without air molecules.");
+  this.info = createDiv("Sound doesn't exist in space only because there are no air molecules that humans' ears can detact. Other being might be able to hear without air molecules. Listen to the changes in sound as you watch the particles roam around freely.");
   
   this.info.position(this.splashBorder+20, this.splashBorder+100);
   this.info.size(windowWidth-this.splashBorder*2-50, windowHeight-this.splashBorder*2-50)
