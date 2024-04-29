@@ -2,7 +2,7 @@ class Splash {
 
  constructor() {
    
-  this.splashBorder = 100;
+  this.splashBorder = 150;
   fill(255);
   //stroke(255, 0, 0)
   rect(this.splashBorder, this.splashBorder, windowWidth-this.splashBorder*2, windowHeight-this.splashBorder*2);
