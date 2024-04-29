@@ -128,7 +128,7 @@ class lines {
     
     this.osc2.freq(this.rl);
     
-    if (this.line_x1 < 0 || this.line_x1 > windowWidth){
+    if (this.line_x1 < 0 || this.line_x1 > windowWidth*1.5){
       this.x_speed *= -1;
       this.count += 1;
       if(this.count%10 == 0){
@@ -137,7 +137,7 @@ class lines {
       }  
     } 
     
-    if (this.line_y1 < 0 || this.line_y1 > windowHeight){
+    if (this.line_y1 < 0 || this.line_y1 > windowHeight*1.5){
       this.y_speed *= -1;
       this.count += 1;
       if(this.count%10 == 0){
