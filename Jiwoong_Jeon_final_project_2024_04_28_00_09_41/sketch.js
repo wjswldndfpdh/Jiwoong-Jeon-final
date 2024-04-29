@@ -147,12 +147,12 @@ class lines {
     }
     //print(this.count);
 
-    if (this.line_x2 < -windowWidth || this.line_x2 > windowWidth * 1.5){
+    if (this.line_x2 < -windowWidth*1.5 || this.line_x2 > windowWidth * 1.5){
       this.x_speed *= -1;
     } 
     
 
-    if (this.line_y2 < -windowHeight || this.line_y2 > windowHeight * 1.5){
+    if (this.line_y2 < -windowHeight*1.5 || this.line_y2 > windowHeight * 1.5){
       this.y_speed *= -1;
     } 
   
